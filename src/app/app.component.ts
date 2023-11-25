@@ -13,6 +13,7 @@ export class AppComponent {
     console.log(f);
   }
 
+
   getValue(fullName: NgModel) {
     console.log(fullName);
   }
