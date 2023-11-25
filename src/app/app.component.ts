@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormControl, NgForm, NgModel} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-forms';
+
+  onSubmit(f: NgForm) {
+    console.log(f);
+  }
+
+  getValue(fullName: NgModel) {
+    console.log(fullName);
+  }
 }
